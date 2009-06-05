@@ -1,0 +1,6 @@
+author Andreas Gohr
+email  andi@splitbrain.org
+date   2009-06-03
+name   "Not Found" page plugin
+desc   Display a custom page when a page does not exist.
+url    http://www.dokuwiki.org/plugin:notfound
