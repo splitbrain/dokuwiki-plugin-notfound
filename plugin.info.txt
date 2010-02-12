@@ -1,3 +1,4 @@
+base   notfound
 author Andreas Gohr
 email  andi@splitbrain.org
 date   2009-06-03

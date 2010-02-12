@@ -6,12 +6,6 @@ require_once(DOKU_PLUGIN.'action.php');
 
 class action_plugin_notfound extends DokuWiki_Action_Plugin {
 
-
-    function getInfo(){
-        return confToHash(dirname(__FILE__).'/info.txt');
-    }
-
-
     function register(&$controller) {
         $controller->register_hook('ACTION_ACT_PREPROCESS','BEFORE', $this, '_check404');
         $controller->register_hook('TPL_CONTENT_DISPLAY','BEFORE', $this, '_show404');
