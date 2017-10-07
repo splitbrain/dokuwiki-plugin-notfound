@@ -12,7 +12,7 @@ class action_plugin_notfound extends DokuWiki_Action_Plugin {
     }
 
 
-    function _check404(&$event , $param) {
+    function _check404(Doku_Event $event , $param) {
         if($event->data != 'show') return false;
         global $INFO;
         if($INFO['exists']) return false;
@@ -23,7 +23,7 @@ class action_plugin_notfound extends DokuWiki_Action_Plugin {
         return true;
     }
 
-    function _show404(&$event, $param) {
+    function _show404(Doku_Event $event, $param) {
         global $ACT;
         if($ACT != 'notfound') return false;
         $event->stopPropagation();
